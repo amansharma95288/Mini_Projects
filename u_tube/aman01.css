@@ -1,0 +1,18 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: lightgray;
+}
+main{
+    background-color: lightgray;
+}
+span{
+    background-color: orange;
+}
+.num1{
+    color: seagreen;
+}
+section.my-article{
+    background-color: #f2e9e9;   
+}

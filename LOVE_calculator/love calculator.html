@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love calculator js</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        #p{
+          background-image: url("love\ is\ blind.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width:100%;
+          height: 100vh;
+          position:relative;
+        }
+        /* header{
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+          
+        } */
+        </style>
+</head>
+<body>
+    <header>
+        <div class="card w-50 m-auto text-center" >
+            <div class="card-header bg-danger text-white">LOVE CALCULATOR</div>
+            <div class="card-body">
+                <form class="pl-5 form-inline w-40 m-auto text-center">
+                    <div class="1st_class">
+                        <input type="text" name="" class="form-control text-center" placeholder="YOUR NAME">
+                    </div>
+                    <div><span class="pl-4 pr-4">+</span></div>
+                    <div class="1st_class">
+                        <input type="text" name="" class="form-control text-center" placeholder="LOVE NAME">
+                    </div>
+                </form><br>
+                 <div class="w-75 m-auto">
+                   <button class="btn btn-success w-50" onclick="lovepercentage()">CLICK</button>
+                 </div><br>
+                 <div>
+                    <input type="text" name="" id="loveresult" class="text-center form-control w-30 m-auto" placeholder="LOVE PERCENTAGE">
+                 </div>
+            </div>
+            <div class="card-footer">GOD BLESS YOUR RELATION</div>
+         </div>  
+     </header>
+     <img id="p" src="love is blind.jpg" alt="love image">
+     <script>
+        function lovepercentage()
+        {
+            var aman =Math.random()*100;
+            aman=Math.floor(aman);
+            document.getElementById("loveresult").value=aman +"%";
+        }
+     </script>
+</body>
+</html>
